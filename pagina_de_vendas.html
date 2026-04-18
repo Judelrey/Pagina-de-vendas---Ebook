@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Como Atrair o Amor da Sua Vida | Desperte sua melhor versão</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+      font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+      color: #2c1810;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* header e capa */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3rem;
+      background: #ffffffcc;
+      backdrop-filter: blur(2px);
+      border-radius: 3rem;
+      padding: 2rem;
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
+    }
+
+    .book-cover {
+      flex: 1;
+      min-width: 220px;
+      text-align: center;
+    }
+
+    .cover-frame {
+      background: linear-gradient(145deg, #ffb7c5, #ff8da1);
+      border-radius: 24px;
+      padding: 1.2rem;
+      box-shadow: 0 25px 35px -12px rgba(190, 60, 90, 0.4);
+      transition: transform 0.3s ease;
+      border: 2px solid #fff9f5;
+    }
+
+    .cover-frame:hover {
+      transform: translateY(-6px);
+    }
+
+    .cover-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .hero-text {
+      flex: 1.5;
+      min-width: 260px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+      color: #b13e5c;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #2d1b12;
+      margin-bottom: 1rem;
+    }
+
+    .badge {
+      background: #b13e5c20;
+      color: #b13e5c;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    /* seções gerais */
+    .section {
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 25px -12px rgba(0,0,0,0.08);
+      transition: all 0.2s;
+    }
+
+    .section-heart {
+      background: #fffaf7;
+      border-left: 8px solid #e87a9e;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+      color: #ac3f5c;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin: 1rem 0 0.8rem;
+      color: #2c1810;
+    }
+
+    .list-check {
+      list-style: none;
+      padding: 0;
+    }
+
+    .list-check li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.8rem;
+      position: relative;
+      font-size: 1.05rem;
+    }
+
+    .list-check li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #d64b74;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .list-cross {
+      list-style: none;
+      padding: 0;
+    }
+    .list-cross li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.8rem;
+      position: relative;
+    }
+    .list-cross li::before {
+      content: "✗";
+      position: absolute;
+      left: 0;
+      color: #a03e5a;
+      font-weight: bold;
+    }
+
+    .price-box {
+      text-align: center;
+      background: linear-gradient(120deg, #f9e3eb, #ffffff);
+      border-radius: 2rem;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    .price {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #b13e5c;
+      letter-spacing: -0.02em;
+    }
+    .price small {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .btn-comprar {
+      background: #b13e5c;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 1rem 2rem;
+      border-radius: 60px;
+      cursor: pointer;
+      width: 100%;
+      max-width: 360px;
+      margin: 1rem auto 0;
+      display: block;
+      transition: all 0.25s;
+      box-shadow: 0 8px 14px #b13e5c40;
+      font-family: inherit;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .btn-comprar:hover {
+      background: #902e4a;
+      transform: scale(1.02);
+      box-shadow: 0 12px 20px #902e4a50;
+    }
+
+    .garantia {
+      background: #f5f0ea;
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    /* Controle de música */
+    .music-control {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #b13e5c;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 18px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .music-control:hover {
+      background: #902e4a;
+      transform: scale(1.03);
+    }
+    .music-icon {
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: #7c5b4b;
+      border-top: 1px solid #ffe2e9;
+      padding-top: 2rem;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 1rem;
+      }
+      .hero {
+        flex-direction: column;
+        padding: 1.5rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+      .hero-text h1 {
+        font-size: 1.8rem;
+      }
+      .btn-comprar {
+        font-size: 1.2rem;
+      }
+      .music-control {
+        bottom: 15px;
+        right: 15px;
+        padding: 6px 14px;
+        font-size: 0.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Botão flutuante para controle da música -->
+<button id="musicToggleBtn" class="music-control">
+  <span class="music-icon">🎵</span> <span id="musicStatus">Ativar música</span>
+</button>
+
+<div class="container">
+  <!-- Hero principal com capa fixa (carregada da pasta /imagens) -->
+  <div class="hero">
+    <div class="book-cover">
+      <div class="cover-frame">
+        <!-- 
+          A imagem da capa deve estar na pasta "imagens" com o nome "capa-ebook.jpg"
+          Você pode alterar o caminho e o nome do arquivo conforme sua necessidade.
+        -->
+        <img class="cover-img" src="imagens/Capa do Guia - Como atrair o amor da sua vida.jpg" alt="Capa do eBook Como Atrair o Amor da Sua Vida">
+      </div>
+    </div>
+    <div class="hero-text">
+      <div class="badge">✦ LANÇAMENTO ESPECIAL ✦</div>
+      <h1>Você não nasceu para implorar amor.</h1>
+      <h2>E se o amor que você tanto procura não estivesse lá fora… mas adormecido dentro de você?</h2>
+      <p>Quantas vezes você já se sentiu cansada de tentar… de se doar… e, no final, sentir que nunca é suficiente?</p>
+      <p>Quantas vezes você aceitou menos do que merecia… só para não ficar sozinha?</p>
+      <p style="font-weight: 600; margin-top: 1rem;">Se isso te machuca… você precisa ler isso até o final.</p>
+    </div>
+  </div>
+
+  <!-- Verdade dolorosa -->
+  <div class="section section-heart">
+    <h2>💔 A verdade que ninguém te conta sobre o amor</h2>
+    <p style="font-size: 1.1rem;">O problema nunca foi você.</p>
+    <p>Você apenas aprendeu a amar da forma errada.</p>
+    <p>Aprendeu a:</p>
+    <ul class="list-check" style="margin-top: 0.5rem;">
+      <li>aceitar migalhas</li>
+      <li>ignorar sinais</li>
+      <li>se diminuir para caber na vida de alguém</li>
+    </ul>
+    <p style="margin-top: 1rem;"><strong>E isso te afastou exatamente do amor que você merece.</strong></p>
+  </div>
+
+  <!-- Nova versão de você -->
+  <div class="section">
+    <h2>✨ Agora imagine uma nova versão sua…</h2>
+    <p>Uma mulher que:</p>
+    <ul class="list-check">
+      <li>não implora atenção</li>
+      <li>não aceita menos do que merece</li>
+      <li>não se perde tentando agradar</li>
+    </ul>
+    <p>Uma mulher que naturalmente atrai:</p>
+    <ul class="list-check">
+      <li>respeito</li>
+      <li>desejo</li>
+      <li>conexão verdadeira</li>
+    </ul>
+    <p style="font-size: 1.2rem; font-weight: 500; margin-top: 1rem;">👉 Essa mulher já existe dentro de você.<br>Ela só precisa ser despertada.</p>
+  </div>
+
+  <!-- O que você vai encontrar -->
+  <div class="section">
+    <h2>📖 O que você vai encontrar neste eBook</h2>
+    <p><strong>“Como Atrair o Amor da Sua Vida”</strong> não é um manual comum.<br>É um guia profundo de reconstrução emocional.</p>
+    <ul class="list-check">
+      <li>✔ Como reconhecer o seu valor e nunca mais aceitar menos</li>
+      <li>✔ Como identificar sinais de alerta antes de se envolver</li>
+      <li>✔ Como lidar com rejeição sem perder sua essência</li>
+      <li>✔ Como se tornar emocionalmente forte e irresistível</li>
+      <li>✔ Como atrair um relacionamento saudável e verdadeiro</li>
+    </ul>
+  </div>
+
+  <!-- Mais que um livro -->
+  <div class="section section-heart">
+    <h2>💎 Mais do que um livro… um refúgio</h2>
+    <p>Este não é um conteúdo que você lê uma vez e esquece. É um guia para a vida.</p>
+    <p>Sempre que você se sentir: insegura, perdida, emocionalmente abalada — você poderá voltar aqui… e se reencontrar.</p>
+  </div>
+
+  <!-- Público alvo + negativo -->
+  <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem;">
+    <div class="section" style="flex:1;">
+      <h2>🔥 Para quem é este eBook?</h2>
+      <ul class="list-check">
+        <li>✔ Para mulheres que já sofreram por amor</li>
+        <li>✔ Para quem sente que sempre dá mais do que recebe</li>
+        <li>✔ Para quem quer um relacionamento de verdade</li>
+        <li>✔ Para quem quer se tornar mais forte emocionalmente</li>
+      </ul>
+    </div>
+    <div class="section" style="flex:1; background:#fef5f0;">
+      <h2>🚫 Para quem NÃO é</h2>
+      <ul class="list-cross">
+        <li>❌ Para quem quer joguinhos ou manipulação</li>
+        <li>❌ Para quem não está disposta a mudar</li>
+        <li>❌ Para quem procura soluções superficiais</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Decisão -->
+  <div class="section" style="text-align: center;">
+    <h2>💬 Uma decisão pode mudar tudo</h2>
+    <p>Você pode continuar vivendo os mesmos padrões… ou pode decidir mudar agora.</p>
+    <p style="font-size: 1.2rem; font-weight: 600;">O amor que você procura começa dentro de você.</p>
+  </div>
+
+  <!-- Preço e botão de compra (redireciona para checkout) -->
+  <div class="price-box">
+    <h2 style="color:#2c1810;">💰 Acesso imediato por apenas:</h2>
+    <div class="price">R$ 19,99</div>
+    <p style="margin-top: 0.3rem;">(Este valor pode mudar a qualquer momento)</p>
+    
+    <!-- 
+      BOTÃO DE COMPRA:
+      Substitua o link abaixo pelo seu LINK REAL DE CHECKOUT (Hotmart, Kiwify, Eduzz, Monetizze, etc.)
+      Exemplo: https://pay.hotmart.com/D88888888?offers=SEU_LINK_AQUI
+    -->
+    <a href="https://pay.hotmart.com/D88888888?offers=SEU_LINK_AQUI" target="_blank" class="btn-comprar" id="btnCheckout">
+      ✨ QUERO DESPERTAR A MINHA MELHOR VERSÃO ✨
+    </a>
+    <p style="margin-top: 1rem; font-size: 0.85rem;">✔ Pagamento 100% seguro ✔ Acesso vitalício ✔ Entrega imediata</p>
+  </div>
+
+  <!-- Garantia -->
+  <div class="garantia">
+    <div style="font-size: 2rem;">⚡</div>
+    <div><strong>⚠️ Garantia de 7 dias</strong><br>Se você sentir que este conteúdo não é para você, basta solicitar o reembolso. Sem perguntas. Sem riscos.</div>
+  </div>
+
+  <!-- Última mensagem emocional -->
+  <div class="section" style="background: #fff5f0; text-align: center;">
+    <h2>❤️ Última mensagem para você</h2>
+    <p style="font-size: 1.1rem;">Talvez ninguém nunca tenha te dito isso…</p>
+    <p style="font-size: 1.3rem; font-weight: 600; margin: 0.8rem 0;">Mas você merece ser amada de verdade.<br>Sem dúvidas. Sem migalhas. Sem dor constante.</p>
+    <p>E tudo começa quando você decide não aceitar menos.</p>
+    <!-- segundo botão de compra (mesmo destino) -->
+    <a href="https://pay.hotmart.com/D88888888?offers=SEU_LINK_AQUI" target="_blank" class="btn-comprar" style="margin-top: 1.5rem; display: inline-block; width: auto; max-width: 320px;">
+      👉 CLIQUE NO BOTÃO E COMECE AGORA 👈
+    </a>
+  </div>
+
+  <footer>
+    <p>© 2025 · Amor em Evolução · Todos os direitos reservados<br>Este site não substitui acompanhamento terapêutico profissional. Resultados variam de pessoa para pessoa.</p>
+  </footer>
+</div>
+
+<!-- ÁUDIO COM INÍCIO SILENCIOSO E ATIVAÇÃO NO PRIMEIRO CLIQUE -->
+<script>
+  // Cria o elemento de áudio
+  const audio = new Audio();
+  // Caminho da música: pasta "musicas" e arquivo "fundo.mp3" (você cria essa pasta e adiciona o arquivo)
+  audio.src = "musicas/fundo.mp3";
+  audio.loop = true;   // Tocar em loop contínuo
+  audio.volume = 0.4;  // Volume inicial (40% - suave, não intrusivo)
+  audio.preload = "auto";
+  
+  // Estado de permissão: ainda não autorizado
+  let userInteracted = false;
+  let isPlaying = false;
+  
+  // Elementos do botão de controle
+  const musicBtn = document.getElementById("musicToggleBtn");
+  const musicStatusSpan = document.getElementById("musicStatus");
+  
+  // Função para tentar tocar (respeitando políticas do navegador)
+  function playMusic() {
+    if (!userInteracted) return;
+    audio.play().then(() => {
+      isPlaying = true;
+      musicStatusSpan.innerText = "Música ligada 🔊";
+      musicBtn.style.background = "#2c6e3c";
+    }).catch((err) => {
+      console.log("Reprodução automática bloqueada, aguardando interação.", err);
+      isPlaying = false;
+      musicStatusSpan.innerText = "Ativar música";
+      musicBtn.style.background = "#b13e5c";
+    });
+  }
+  
+  function pauseMusic() {
+    audio.pause();
+    isPlaying = false;
+    musicStatusSpan.innerText = "Música ligar 🔊";
+    musicBtn.style.background = "#b13e5c";
+  }
+  
+  // Alternar play/pause pelo botão flutuante
+  function toggleMusic() {
+    if (!userInteracted) {
+      // Ainda não houve interação? Vamos forçar a ativação agora.
+      userInteracted = true;
+      playMusic();
+      return;
+    }
+    
+    if (isPlaying) {
+      pauseMusic();
+    } else {
+      playMusic();
+    }
+  }
+  
+  // Evento: primeiro clique do usuário em qualquer lugar da página (ativa o áudio)
+  function firstUserInteraction() {
+    if (userInteracted) return;
+    userInteracted = true;
+    playMusic();
+    // Remove os listeners após a primeira interação para não ficar escutando à toa
+    document.removeEventListener("click", firstUserInteraction);
+    document.removeEventListener("touchstart", firstUserInteraction);
+    document.removeEventListener("keydown", firstUserInteraction);
+  }
+  
+  // Aguarda qualquer interação inicial (clique, toque, tecla)
+  document.addEventListener("click", firstUserInteraction);
+  document.addEventListener("touchstart", firstUserInteraction);
+  document.addEventListener("keydown", firstUserInteraction);
+  
+  // Botão de controle manual (também dispara a ativação se ainda não houve)
+  musicBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); // evitar duplicidade
+    if (!userInteracted) {
+      userInteracted = true;
+      playMusic();
+    } else {
+      toggleMusic();
+    }
+  });
+  
+  // Pré-carregar o áudio para dar mais fluidez
+  audio.load();
+  
+  console.log("Página carregada. A música tocará assim que você clicar em qualquer lugar da página (ou no botão flutuante).");
+</script>
+
+<!-- 
+  INSTRUÇÕES IMPORTANTES:
+  
+  1. CAPA DO EBOOK:
+     - Crie uma pasta chamada "imagens" no mesmo diretório deste arquivo HTML.
+     - Coloque a imagem da capa dentro da pasta "imagens" com o nome "capa-ebook.jpg".
+     (se for .png, altere no código: src="imagens/capa-ebook.png")
+  
+  2. MÚSICA DE FUNDO:
+     - Crie uma pasta chamada "musicas" no mesmo diretório deste arquivo HTML.
+     - Coloque um arquivo MP3 dentro da pasta "musicas" com o nome "fundo.mp3".
+     - Dica: use uma música instrumental calma e suave para não atrapalhar a conversão.
+  
+  3. LINK DE CHECKOUT:
+     - Substitua os links "https://pay.hotmart.com/D88888888?offers=SEU_LINK_AQUI" pelo seu link real de pagamento (Hotmart, Kiwify, Eduzz, etc.)
+     - O botão de compra redirecionará o cliente para a página de pagamento.
+  
+  4. COMPORTAMENTO DO ÁUDIO:
+     - A página NÃO toca música automaticamente ao carregar (navegadores bloqueiam).
+     - Assim que o usuário clicar em QUALQUER LUGAR da página (ou no botão flutuante), a música começará a tocar suavemente.
+     - O botão flutuante no canto inferior direito permite ligar/desligar a música a qualquer momento.
+-->
+</body>
+</html>
