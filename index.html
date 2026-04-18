@@ -291,16 +291,15 @@
 </button>
 
 <div class="container">
-  <!-- Hero principal com capa fixa (carregada da pasta /imagens) -->
+  <!-- Hero principal com capa fixa -->
   <div class="hero">
     <div class="book-cover">
       <div class="cover-frame">
         <!-- 
-          A imagem da capa deve estar na pasta "imagens" com o nome "capa-ebook.jpg"
-          Você pode alterar o caminho e o nome do arquivo conforme sua necessidade.
+          CAPA: arquivo está na raiz do repositório
+          Nome: "Capa do Guia - Como atrair o amor da sua vida.jpg"
         -->
-        <img class="cover-img" src="Página de vendas---Ebook
-/Capa do Guia - Como atrai o amor da sua vida.jpg" alt="Capa do eBook Como Atrair o Amor da Sua Vida">
+        <img class="cover-img" src="Capa do Guia - Como atrair o amor da sua vida.jpg" alt="Capa do eBook Como Atrair o Amor da Sua Vida">
       </div>
     </div>
     <div class="hero-text">
@@ -393,18 +392,17 @@
     <p style="font-size: 1.2rem; font-weight: 600;">O amor que você procura começa dentro de você.</p>
   </div>
 
-  <!-- Preço e botão de compra (redireciona para checkout) -->
+  <!-- Preço e botão de compra -->
   <div class="price-box">
     <h2 style="color:#2c1810;">💰 Acesso imediato por apenas:</h2>
     <div class="price">R$ 19,99</div>
     <p style="margin-top: 0.3rem;">(Este valor pode mudar a qualquer momento)</p>
     
     <!-- 
-      BOTÃO DE COMPRA:
-      Substitua o link abaixo pelo seu LINK REAL DE CHECKOUT (Hotmart, Kiwify, Eduzz, Monetizze, etc.)
-      Exemplo: https://pay.hotmart.com/D88888888?offers=SEU_LINK_AQUI
+      LINK DE CHECKOUT:
+      Substitua pelo seu link real de pagamento
     -->
-    <a href="https://pay.kiwify.com.br/EmGb1l6" target="_blank" class="btn-comprar" id="btnCheckout">
+    <a href="https://pay.kiwify.com.br/OgcZrx2" target="_blank" class="btn-comprar" id="btnCheckout">
       ✨ QUERO DESPERTAR A MINHA MELHOR VERSÃO ✨
     </a>
     <p style="margin-top: 1rem; font-size: 0.85rem;">✔ Pagamento 100% seguro ✔ Acesso vitalício ✔ Entrega imediata</p>
@@ -423,7 +421,7 @@
     <p style="font-size: 1.3rem; font-weight: 600; margin: 0.8rem 0;">Mas você merece ser amada de verdade.<br>Sem dúvidas. Sem migalhas. Sem dor constante.</p>
     <p>E tudo começa quando você decide não aceitar menos.</p>
     <!-- segundo botão de compra (mesmo destino) -->
-    <a href="https://pay.hotmart.com/D88888888?offers=SEU_LINK_AQUI" target="_blank" class="btn-comprar" style="margin-top: 1.5rem; display: inline-block; width: auto; max-width: 320px;">
+    <a href="https://pay.kiwify.com.br/OgcZrx2" target="_blank" class="btn-comprar" style="margin-top: 1.5rem; display: inline-block; width: auto; max-width: 320px;">
       👉 CLIQUE NO BOTÃO E COMECE AGORA 👈
     </a>
   </div>
@@ -437,8 +435,8 @@
 <script>
   // Cria o elemento de áudio
   const audio = new Audio();
-  // Caminho da música: pasta "musicas" e arquivo "fundo.mp3" (você cria essa pasta e adiciona o arquivo)
-  audio.src = "musicas/fundo.mp3";
+  // MÚSICA: arquivo está na raiz do repositório
+  audio.src = "Lana Del Rey - Art Deco (Instrumental)(MP3_160K).mp3";
   audio.loop = true;   // Tocar em loop contínuo
   audio.volume = 0.4;  // Volume inicial (40% - suave, não intrusivo)
   audio.preload = "auto";
@@ -469,7 +467,7 @@
   function pauseMusic() {
     audio.pause();
     isPlaying = false;
-    musicStatusSpan.innerText = "Música ligar 🔊";
+    musicStatusSpan.innerText = "Ativar música";
     musicBtn.style.background = "#b13e5c";
   }
   
@@ -519,30 +517,8 @@
   // Pré-carregar o áudio para dar mais fluidez
   audio.load();
   
-  console.log("Página carregada. A música tocará assim que você clicar em qualquer lugar da página (ou no botão flutuante).");
+  console.log("Página carregada. A música tocará assim que você clicar em qualquer lugar da página.");
 </script>
 
-<!-- 
-  INSTRUÇÕES IMPORTANTES:
-  
-  1. CAPA DO EBOOK:
-     - Crie uma pasta chamada "imagens" no mesmo diretório deste arquivo HTML.
-     - Coloque a imagem da capa dentro da pasta "imagens" com o nome "capa-ebook.jpg".
-     (se for .png, altere no código: src="imagens/capa-ebook.png")
-  
-  2. MÚSICA DE FUNDO:
-     - Crie uma pasta chamada "musicas" no mesmo diretório deste arquivo HTML.
-     - Coloque um arquivo MP3 dentro da pasta "musicas" com o nome "fundo.mp3".
-     - Dica: use uma música instrumental calma e suave para não atrapalhar a conversão.
-  
-  3. LINK DE CHECKOUT:
-     - Substitua os links "https://pay.hotmart.com/D88888888?offers=SEU_LINK_AQUI" pelo seu link real de pagamento (Hotmart, Kiwify, Eduzz, etc.)
-     - O botão de compra redirecionará o cliente para a página de pagamento.
-  
-  4. COMPORTAMENTO DO ÁUDIO:
-     - A página NÃO toca música automaticamente ao carregar (navegadores bloqueiam).
-     - Assim que o usuário clicar em QUALQUER LUGAR da página (ou no botão flutuante), a música começará a tocar suavemente.
-     - O botão flutuante no canto inferior direito permite ligar/desligar a música a qualquer momento.
--->
 </body>
 </html>
